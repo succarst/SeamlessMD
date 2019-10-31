@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Patient Information</title>
+    <style> 
+    body {
+        background: rgb(190, 190, 190);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
+    }
+    h1 { 
+        color: cornflowerblue;
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>Patient Information</h1>
+    <p>Patient information from FHIR is desplayed below.
+    </p>
+
+    <section> </section>
+
+    <!-- var requestURL = 'https://raw.githubusercontent.com/succarst/SeamlessMD/master/patient.json'; -->
+    <script type="text/javascript" src="patient.json"> </script>
+    <script>
+    var p = document.createElement('p');
+    var myList = document.createElement('ul');
+    var info = JSON.parse(patient);
+    var name = patient.name.given + patient.name.family;
+    var gender = patient.gender;
+    var organization = patient.managingOrganization.display;
+    var condNumb = patient.conditions.length;
+
+    for (var j = 0; j < patient.conditions.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = superPowers[j];
+      myList.appendChild(listItem);
+    }
+
+    p.innerHTML = "Name of patient: " + name  + <br/> 
+        "Organization name: " + organization + <br/>
+        "Gender: " + gender + <br/>
+        "Number of conditions they have: " + condNumb +  <br/>
+        "List of all conditions: " + <br/> ;
+
+        document.body.appendChild(p);
+        document.body.appendChild(myList);
+</script>
+
+
+</body>
+</html>
