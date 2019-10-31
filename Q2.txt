@@ -1,0 +1,15 @@
+1. half cloud on right side
+2. door on windmill
+3. nostril on pig
+4. smile on pig
+5. feather on rooster wing
+6. pink ear on cow
+7. flower on woman's head scarf
+8. middle tine on pitchfork 
+9. eyebrow on chick
+10. button on man's shirt
+11. Big spot on dog's ear
+12. smaller spot on dog's ear
+13. flower on bottom right side.
+
+I started analyzing the background from top top bottom (sky until fence) and then analyzed all animals and humans left to right (chicken to man). Finally analyzed the flowers left to right. When I was done I did a quick check to see if I missed anything by starting left to right on the whole screen. The initial process took 10 minutes and around 5 minutes to see if I missed anything for a total of under 15 minutes.
