@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Patient Information</title>
+    <style> 
+    body {
+        background: rgb(190, 190, 190);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
+    }
+    h1 { 
+        color: cornflowerblue;
+        }
+    #info {
+        width: 100%;
+        padding: 20px 10px;
+        line-height: 2.0;
+        text-align: left;
+        background-color: cornflowerblue;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Patient Information</h1>
+    <p>To display patient information from FHIR
+        click button below.
+    </p>
+    <button onclick="display()">Display</button>
+    <div id="info">
+        Name of patient: <br/>
+        Organization name: <br/>
+        Gender: <br/>
+        Number of conditions they have: <br/>
+        List of all conditions: <br/>
+    </div>
+    <script>
+        function display(){
+            var x = document.getElementById("info")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>

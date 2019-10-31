@@ -1,0 +1,13 @@
+- Line 2: missing comma ','
+- line 4: missing opening curly bracket '{'
+- line 8: missing colon ':'
+- line 14: missing comma ','
+- line 19: missing comma ','
+- line 21: missing closing curly bracket '}'
+- line 22: missing closing square bracket ']' before existing comma
+- lines 24-33, paragraph "name": the square brackets for "name", "family" and "given" are unecessary since there is only one value; however I kept them in case of future changes (patient gets different last name or given name or new patient) 
+- line 28: missing comma ',' after square bracket
+- line 33: missing comma ',' after square bracket
+- line 34: missing end quote ' " ' after "gender"
+- line 35: missing comma ','
+- line 42: missing comma ','
